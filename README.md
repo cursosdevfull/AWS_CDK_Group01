@@ -1,1 +1,0 @@
-# AWS_CDK_Group01

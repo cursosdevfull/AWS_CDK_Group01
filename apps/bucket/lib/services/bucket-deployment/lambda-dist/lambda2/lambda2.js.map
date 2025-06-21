@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../lambda-code/lambda2/lambda2.ts"],
+  "sourcesContent": ["import { Handler } from \"aws-cdk-lib/aws-lambda\";\r\n\r\nexport const handler: Handler = async (event: any) => {\r\n    return {\r\n        statusCode: 200,\r\n        body: JSON.stringify({\r\n            message: \"Hello from Lambda 2!\",\r\n            input: event,\r\n        }),\r\n    }\r\n}"],
+  "mappings": ";yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAEO,IAAME,EAAmB,MAAOE,IAC5B,CACH,WAAY,IACZ,KAAM,KAAK,UAAU,CACjB,QAAS,uBACT,MAAOA,CACX,CAAC,CACL",
+  "names": ["lambda2_exports", "__export", "handler", "__toCommonJS", "event"]
+}
