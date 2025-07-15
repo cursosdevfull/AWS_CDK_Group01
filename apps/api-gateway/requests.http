@@ -1,0 +1,29 @@
+post https://fw9n82c4c0.execute-api.us-east-1.amazonaws.com/prod/products
+Content-Type: application/json
+
+{
+  "title": "Pillow",
+  "price": 100,
+  "description": "Egypt Cotton Pillow with 100% Cotton Cover",
+  "image": "https://www.sleepspa.in/wp-content/uploads/2019/10/HTB1_TEFgMaTBuNjSszfq6xgfpXas-600x604.jpg"
+}
+
+###
+get https://fw9n82c4c0.execute-api.us-east-1.amazonaws.com/prod/products/aed167c6-a78d-4590-b6be-42ce7dbfa625
+
+###
+get https://fw9n82c4c0.execute-api.us-east-1.amazonaws.com/prod/products
+
+###
+put https://fw9n82c4c0.execute-api.us-east-1.amazonaws.com/prod/products/aed167c6-a78d-4590-b6be-42ce7dbfa625
+Content-Type: application/json
+
+{
+  "title": "Updated Pillow",
+  "price": 120,
+  "description": "Updated description for the pillow",
+  "image": "https://www.sleepspa.in/wp-content/uploads/2019/10/HTB1_TEFgMaTBuNjSszfq6xgfpXas-600x604.jpg"
+}
+
+###
+delete https://fw9n82c4c0.execute-api.us-east-1.amazonaws.com/prod/products/aed167c6-a78d-4590-b6be-42ce7dbfa625

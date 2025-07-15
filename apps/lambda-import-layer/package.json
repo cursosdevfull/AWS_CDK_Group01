@@ -20,8 +20,8 @@
     "typescript": "~5.6.3"
   },
   "dependencies": {
+    "aws_cdk_group01": "github:cursosdevfull/AWS_CDK_Group01",
     "aws-cdk-lib": "2.198.0",
-    "constructs": "^10.0.0",
-    "math-operations": "^1.1.0"
+    "constructs": "^10.0.0"
   }
 }

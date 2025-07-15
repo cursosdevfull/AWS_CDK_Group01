@@ -11,12 +11,12 @@ export class Functions extends Construct {
         const layerOperationsArn = Fn.importValue("MathOperationsLayerArn");
 
         new NodejsLambda(this, 'Lambda01', {
-            functionName: 'Lambda01',
+            functionName: 'Lambda04',
             description: 'Lambda function 01',
             entry: path.join(__dirname, "../lambda-code/lambda01.ts"),
             layers: [
                 LayerVersion.fromLayerVersionArn(this, 'LayerOperations', layerOperationsArn)
-            ]
+            ],
         })
 
 

@@ -19,7 +19,7 @@ export class NodejsLambda extends NodejsFunction {
             bundling: {
                 minify: true,
                 sourceMap: true,
-                externalModules: ['aws-sdk'], // Exclude aws-sdk from the bundle
+                externalModules: ['aws-sdk', 'math-operations'], // Exclude aws-sdk from the bundle
             },
             logRetention: props.logRetention || RetentionDays.ONE_WEEK
         });

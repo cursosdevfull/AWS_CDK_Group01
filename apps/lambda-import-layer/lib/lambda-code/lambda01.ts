@@ -1,5 +1,4 @@
-import { sum } from '/opt/nodejs/math-operations';
-
+import { divide, multiply, subtract, sum } from 'math-operations';
 
 export const handler = async (event: any) => {
     console.log("Event received:", JSON.stringify(event, null, 2));
